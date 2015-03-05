@@ -1,14 +1,6 @@
 # ruby_chess_clone
 Implementation of chess game built with Ruby for the console. The requirements for this project were based on the specifications given in the instructions below.
 
-# Chess
-
-Write a [chess game][wiki-chess] in an object-oriented way. **Please
-read all through the various phases before proceeding.**
-
-Please split your program into multiple files. Use [require_relative](http://www.ruby-doc.org/core-2.1.2/Kernel.html#method-i-require_relative)
-to load files. Make separate files for each class. Give files `snake_case`
-titles.
 
 ## Phase I: Pieces
 
@@ -39,7 +31,6 @@ reference to the `Board`. The `SlidingPiece` in particular needs the
 piece. Don't allow a piece to move into a square already occuppied by the
 same color piece, or to move a sliding piece past a piece that blocks it.
 
-For now, do not worry if a move would leave a player in check.
 
 ## Phase II: `Board` and `Board#check(color)`
 
@@ -73,9 +64,6 @@ method should duplicate not only the `Board`, but the pieces on the
 `Board`. **Be aware**: Ruby's `#dup` method does not call `dup` on the
 instance variables, so you may need to write your own `Board#dup`
 method that will `dup` the individual pieces as well.
-
-### Caution on duping pieces
-If your piece holds a reference to the original board, you will need to update this reference to the new duped board. Failure to do so will cause your duped board to generate incorrect moves!
 
 ### An alternative to duping?
 
