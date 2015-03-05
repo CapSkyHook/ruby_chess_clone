@@ -1,8 +1,6 @@
 # ruby_chess_clone
-<<<<<<< HEAD
 ##Implementation of chess game built with Ruby for the console. To play the game, run the game.rb file in the console.
 
-=======
 The requirements for this project were based on the specifications given in the instructions below.
 
 ![Image of Yaktocat](./Chess-Screenshot.png)
@@ -115,4 +113,3 @@ calls `play_turn`.
 It is not a requirement to write a `ComputerPlayer`, but you may do
 this as a bonus. If you write your `Game` class cleanly, it should be
 relatively straightforward to add new player types at a later date.
->>>>>>> 04d2b2e044d076bfe929bd6d6a8754a61c961da0
