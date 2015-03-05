@@ -1,12 +1,14 @@
 # ruby_chess_clone
 <<<<<<< HEAD
-Implementation of chess game built with Ruby for the console.
+##Implementation of chess game built with Ruby for the console. To play the game, run the game.rb file in the console.
 
 =======
-Implementation of chess game built with Ruby for the console. The requirements for this project were based on the specifications given in the instructions below.
+The requirements for this project were based on the specifications given in the instructions below.
+
+![Image of Yaktocat](./Chess-Screenshot.png)
 
 
-## Phase I: Pieces
+### Phase I: Pieces
 
 There are many different kinds of pieces in chess, and each moves a
 specific way.  Based on their moves, they can be placed in three
@@ -36,7 +38,7 @@ piece. Don't allow a piece to move into a square already occuppied by the
 same color piece, or to move a sliding piece past a piece that blocks it.
 
 
-## Phase II: `Board` and `Board#check(color)`
+### Phase II: `Board` and `Board#check(color)`
 
 Your `Board` class should hold a 2-dimensional array (an array of
 arrays). Each position in the board either holds a `Piece`, or `nil`
@@ -53,7 +55,7 @@ should update the 2d grid and also the moved piece's position. You'll
 want to raise an exception if: (a) there is no piece at `start` or (b)
 the piece cannot move to `end_pos`.
 
-## Phase III: `Piece#valid_moves`
+### Phase III: `Piece#valid_moves`
 
 You will want a method on `Piece` that filters out the `#moves` of a
 `Piece` that would leave the player in check. A good approach is to
@@ -69,7 +71,7 @@ method should duplicate not only the `Board`, but the pieces on the
 instance variables, so you may need to write your own `Board#dup`
 method that will `dup` the individual pieces as well.
 
-### An alternative to duping?
+#### An alternative to duping?
 
 Another way to write `#valid_moves` would be to make the move on the
 original board, see if the player is in check, and then "undo" the
@@ -79,7 +81,7 @@ moves.
 Once you write your `Board#dup` method, it'll be very straightforward
 to write `Piece#valid_moves` without complicated do/undo logic.
 
-### Further `Board` improvements
+#### Further `Board` improvements
 
 Modify your `Board#move` method so that it only allows you to make
 valid moves. Because `Board#move` needs to call `Piece#valid_moves`,
@@ -90,13 +92,13 @@ move without checking if it is valid.
 
 `Board#move` should raise an exception if it would leave you in check.
 
-## Phase IV: `Board#checkmate?(color)`
+### Phase IV: `Board#checkmate?(color)`
 
 Write a `#checkmate?` method. If the player is in check, and if none
 of the player's pieces have any `#valid_moves`, then the player is in
 checkmate.
 
-## Phase V: `Game`
+### Phase V: `Game`
 
 Only when done with the basic Chess logic (moving, check, checkmate)
 should you begin writing user interaction code.
