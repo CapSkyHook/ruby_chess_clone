@@ -1,9 +1,9 @@
 # ruby_chess_clone
-##Implementation of chess game built with Ruby for the console. To play the game, run the game.rb file in the console.
+###Implementation of chess game built with Ruby for the console. To play the game, run the game.rb file in the console.
 
 The requirements for this project were based on the specifications given in the instructions below.
 
-![Image of Yaktocat](./Chess-Screenshot.png)
+![Image of Chess-Screenshot](./Chess-ScreenShot.png)
 
 
 ### Phase I: Pieces
